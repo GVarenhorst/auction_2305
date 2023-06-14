@@ -1,6 +1,6 @@
 require './lib/item'
 require './lib/attendee'
-# require './lib/auction'
+require './lib/auction'
 RSpec.describe Item do
   it "exists and has attributes" do
     item1 = Item.new('Chalkware Piggy Bank')
@@ -22,5 +22,6 @@ RSpec.describe Item do
     
 
     expect(item1.bids).to eq({attendee2 => 20, attendee1 => 22})
+    expect(item1.current_high_bid).to eq(22)
   end
 end
