@@ -29,4 +29,6 @@ class Auction
     end
     high_total
   end
+
+  
 end

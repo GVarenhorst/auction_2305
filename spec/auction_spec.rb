@@ -73,4 +73,5 @@ RSpec.describe Auction do
 
     expect(auction.potential_revenue).to eq(87)
   end
+  
 end
