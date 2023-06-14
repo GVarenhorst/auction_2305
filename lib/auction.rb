@@ -19,4 +19,14 @@ class Auction
     item.bids.empty?
     end
   end
+
+  def potential_revenue
+    high_total = 0
+    @items.each do |item|
+      if item.current_high_bid != nil
+        high_total += item.current_high_bid
+      end
+    end
+    high_total
+  end
 end
